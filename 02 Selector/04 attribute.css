@@ -1,0 +1,9 @@
+* {
+    text-align: justify;
+}
+
+[href] {
+    color: red;
+    font-family: monospace;
+    font-size: 20px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+    <link rel="stylesheet" href="attribute.css">
+</head>
+<body>
+    <h1>Hello World!!!</h1>
+    <h2>I am Vishesh, these all are my social contact:</h2>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/visheshverma2007/">LinkedIn</a></li>
+        <li><a href="https://github.com/vishesh-py">GitHub</a></li>
+        <li><a href="https://www.instagram.com/vishesh_py/">Instagram</a></li>
+        <li><a href="mailto:visheshverma244@gmail.com">Email</a></li>
+    </ul>
+
+<!--
+The attribute selector can be used to target HTML elements that already contain attributes.
+
+1. Simple Attribute Selector -----
+
+The syntax for an attribute selector is as follows:
+[attribute] {
+  /* CSS properties */
+}
+In the above syntax, attribute is the name of the attribute you want to target. 
+The CSS properties defined within the curly braces will be applied to all elements that have the specified attribute.
+
+2. Specific Attribute Selector ------
+
+One way is by using type[attribute*=value] for making it more specific. 
+This will select elements of a specific type that have an attribute containing a certain value.
+For example, if you want to target all anchor (<a>) elements that have an href attribute, you can use the following CSS:
+a[href] {
+  /* CSS properties */
+}   
+This will apply the specified CSS properties to all anchor elements that have an href attribute, regardless of its value.
+
+-->    
+</body>
+</html>

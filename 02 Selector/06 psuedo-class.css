@@ -1,0 +1,10 @@
+* {
+    text-align: center;
+    font-family: monospace;
+    font-size: 90px;
+}
+
+a:hover {
+    color: red;
+    font-family: Calibri;
+}

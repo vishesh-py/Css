@@ -1,0 +1,13 @@
+* {
+    font-family: monospace;
+    background-color: lightyellow;
+}
+
+.heading {
+    color: red;
+}
+
+.writing {
+    color :blue;
+    font-weight: 900;
+}

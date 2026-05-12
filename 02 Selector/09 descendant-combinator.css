@@ -1,0 +1,14 @@
+ol li {
+  color: blue;
+  font-size: small;
+  font-family: monospace;
+  font-weight: 900;
+}
+
+ol {
+    border : 2px dotted black;
+}
+
+ol li {
+    border : 1px dotted red;
+}
