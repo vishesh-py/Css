@@ -1,0 +1,19 @@
+h1 {
+    color: maroon;
+}
+
+p {
+    color: blue;
+}
+
+
+/*
+1. Selection : p (tagerting html element)
+2. Declaration : color: blue; (property and value)
+3: Declartion block :
+{
+    color: blue;
+}
+4. Property : color
+5. Value : blue
+*/
