@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Margin</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+            margin: auto 0;
+            text-align: justify;
+            border-radius: 20px;
+        }
+        #margin {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+            margin: 0 auto;
+            text-align: justify;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This div has a width of 200 pixels, a height of 100 pixels, and margin set to auto on all sides.</p>
+    </div>
+    <div id="margin">
+        <p>This div has a width of 200 pixels, a height of 100 pixels, and margin set to 10px on top and bottom and auto on left and right.</p>
+    </div>
+    
+<!--
+The margin property also lets you center content.
+When you set the left and right margins to auto, the browser calculates the margins equally, centering the element within its container.
+This technique is commonly used to center block-level elements, such as divs, within their parent containers.
+
+# margin: 0 auto; will center the divs in their containing elements. The 0 sets the top and bottom margins to 0 pixels. The auto value instructs the browser to adjust the left and right margins until the element is centered within its containing element.
+# margin: auto 0; will center the divs vertically in their containing elements. The auto value instructs the browser to adjust the top and bottom margins until the element is centered within its containing element. The 0 sets the left and right margins to 0 pixels.
+</html>

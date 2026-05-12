@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 200px;
+            background-color: lightblue;
+            border: 1px solid black;
+            margin: 20px;
+            text-align: justify;
+            border-radius: 20px;
+        }
+        .child {
+            width: 200px;
+            height: 100px;
+            background-color: lightcoral;
+            border: 1px solid black;
+            margin: 30px;
+            text-align: justify;
+            border-radius: 20px;
+        }
+        .child2 {
+            width: 200px;
+            height: 100px;
+            background-color: lightcoral;
+            border: 1px solid black;
+            margin: 30px;
+            text-align: justify;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>This container has a width of 400 pixels, a height of 200 pixels, and margin of 20 pixels on all sides.</p>
+        <div class="child">
+            <p>This child div has a width of 200 pixels, a height of 100 pixels, and margin of 30 pixels on all sides.</p>
+        </div>
+        <div class="child2">
+            <p>This child div has a width of 200 pixels, a height of 100 pixels, and margin of 30 pixels on all sides.</p>
+        </div>
+    </div>
+
+    
+<!--
+1. Padding adds space inside an element’s border.
+2. Margin adds space outside an element’s border.
+3. Horizontal margins (left/right) always add together.
+4. Example: 20px + 20px horizontal margins = 40px total space.
+5. Vertical margins (top/bottom) collapse instead of adding.
+6. The larger vertical margin decides the final spacing.
+7. Example: 30px bottom + 20px top = 30px final space.
+8. Padding never collapses like margins do.
+9. Margin collapsing happens only with vertical margins.
+10. Think of it like a taller person overpowering a shorter one.
+-->    
+ 
+</body>
+</html>

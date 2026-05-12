@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+            margin: 200px;
+            text-align: justify;
+            border-radius: 20px;
+        }
+        #margin {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+            margin: 10px 20px 30px 40px;
+            text-align: justify;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This div has a width of 200 pixels, a height of 100 pixels, and margin of 20 pixels on all sides.</p>
+    </div>
+    <div id="margin">
+        <p>This div has a width of 200 pixels, a height of 100 pixels, and margin of 10px 20px 30px 40px.</p>
+    </div>
+    
+
+<!--
+The space between the borders of a box and the surrounding elements is known as margin.
+The margin property is used to create space around elements, outside of any defined borders.
+
+If you want to be more specific about the amount of margin on each side of a box, you can use the following properties:
+
+margin-top: the width of the top margin for an element.
+margin-right: the width of the right margin for an element.
+margin-bottom: the width of the bottom margin for an element.
+margin-left: the width of the left margin for an element.
+
+Each property affects the margin on only one side of the box, giving you more flexibility in customization.
+
+Margin Shorthand Property allows you to set the margin for all four sides of an element in one declaration.
+
+The values are applied in a specific order: top, right, bottom, left. (clockwise order starting from the top)
+
+If you provide fewer than four values, the missing values will be filled in based on the number of values provided.
+
+Case 1 - If you provide one value, it will be applied to all four sides of the element.
+margin: 20px; /* Applies 20px margin to all sides */
+
+Case 2 - If you provide two values, the first value will be applied to the top and bottom, and the second value will be applied to the left and right.
+margin: 20px 40px; /* Applies 20px margin to top and bottom and 40px margin to left and right */
+
+Case 3 - If you provide three values, the first value will be applied to the top the second value will be applied to the left and right, and the third value will be applied to the bottom. margin: 20px 40px 60px;
+/* Applies 20px margin to top, 40px margin to left and right, and 60px margin to bottom */
+
+Case 4 - If you provide four values, they will be applied to the top, right, bottom, and left margins respectively.
+margin: 20px 40px 60px 80px; /* Applies 20px margin to top, 40px margin to right, 60px margin to bottom, and 80px margin to left */
+-->
+</body>
+</html>

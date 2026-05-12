@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiblity</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: justify;
+            border-radius: 20px;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+        .collapse {
+            visibility: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This div is visible.</p>
+    </div>
+    <div class="hidden">
+        <p>This div is hidden but still takes up space.</p>
+    </div>
+    <div class="collapse">
+        <p>This div is collapsed and does not take up space.</p>
+    </div>
+
+
+<!--
+Elements can be hidden from view with the visibility property.
+
+The visibility property can be set to one of the following values:
+
+hidden — hides an element.
+visible — displays an element.
+collapse — collapses an element.    
+
+When an element is set to hidden, it will not be visible on the page, but it will still take up space in the layout. 
+The element will be rendered as if it were visible, but it will not be displayed to the user.
+
+When an element is set to collapse, it will not be visible on the page and it will not take up any space in the layout. 
+The element will be completely removed from the rendering flow, and other elements will be positioned as if the collapsed element does not exist.
+-->    
+</body>
+</html>
