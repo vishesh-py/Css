@@ -2,7 +2,7 @@
 
 ## 15-Point Summary
 
-<img src=content modal.png">
+<img src="content modal.png">
 
 1. The CSS **Box Model** defines how element size and spacing work on a webpage.
 
