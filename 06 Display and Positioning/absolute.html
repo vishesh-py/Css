@@ -1,0 +1,113 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Absolute Position Example</title>
+
+    <style>
+        /* Parent container */
+        .container{
+            width: 800px;
+            height: 500px;
+            background: lightcoral;
+            border: 2px solid black;
+            /* Makes this the reference for absolute children */
+            position: relative;
+            margin: 50px auto;
+        }
+
+        /* Introduction card */
+        .intro{
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            background-color: lightyellow;
+            width: 200px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        /* Skills card */
+        #skill{
+            position: absolute;
+            top: 100px;
+            left: 350px;
+            background-color: lightyellow;
+            width: 200px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 style="text-align:center;">
+            Vishesh Verma
+        </h1>
+
+        <div class="intro">
+            <h3>Introduction</h3>
+
+            <p>
+                My name is Vishesh Verma.
+                I am a BTech student and currently learning
+                HTML, CSS, JavaScript, Python and Flask.
+            </p>
+        </div>
+
+        <div id="skill">
+            <h3>Skills</h3>
+
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Flask</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!--
+    ==========================================
+    ABSOLUTE POSITION NOTES
+    ==========================================
+
+    1. position:absolute removes the element
+       from the normal document flow.
+
+    2. top sets distance from the top of
+       the reference element.
+
+    3. left sets distance from the left of
+       the reference element.
+
+    4. right sets distance from the right.
+
+    5. bottom sets distance from the bottom.
+
+    6. Absolute elements look for the nearest
+       positioned parent.
+
+    7. A positioned parent can have:
+       relative, absolute, fixed, or sticky.
+
+    8. If no positioned parent exists,
+       the viewport becomes the reference.
+
+    9. No space is reserved for an
+       absolute element.
+
+    10. Memory Trick:
+        Relative = Parent
+        Absolute = Child that follows parent
+
+    ==========================================
+    -->
+
+</body>
+</html>
+```

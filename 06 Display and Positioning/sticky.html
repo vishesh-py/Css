@@ -1,0 +1,99 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+/* Sticky Note */
+.sticky-note{
+    position: sticky;
+    top: 20px;
+
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+
+    background: gold;
+    border: 2px solid black;
+}
+
+/* Long content to force scrolling */
+.content{
+    padding: 20px;
+    width: 80%;
+}
+
+#hi{
+    position:sticky;
+    top:20px;
+    background: lightcoral;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+    border : 1px dotted black;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sticky-note">
+    📌 I am Sticky!
+    <br>
+    Scroll the page and watch me.
+</div>
+
+<div class="content">
+    <h1 id="hi">Sticky Position Demo</h1>
+
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+
+    <div style="height:1500px;">
+        Keep Scrolling...
+    </div>
+</div>
+
+<!--
+STICKY POSITION NOTES
+
+1. position: sticky combines relative and fixed.
+
+2. Initially behaves like position: relative.
+
+3. When scroll reaches top:20px,
+   it sticks to that position.
+
+4. top, left, right or bottom is required.
+
+5. Stays inside its parent container.
+
+6. Unlike fixed, sticky does not follow
+   the viewport forever.
+
+7. Commonly used for:
+   - Navigation bars
+   - Sidebars
+   - Table headings
+
+Memory Trick:
+Relative -> Normal
+Sticky -> Stick when needed
+Fixed -> Always stuck
+-->
+</body>
+</html>
+```

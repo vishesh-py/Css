@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Fixed Position Example</title>
+
+    <style>
+
+        body{
+            height: 2000px;
+        }
+
+        .navbar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            background-color: lightblue;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .content{
+            margin-top: 80px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        i am married
+    </div>
+
+    <div class="content">
+        <h1>Lalallalallalalal</h1>
+
+        <p>
+            Scroll down the page.
+            The navigation bar will remain visible
+            at the top of the screen.
+        </p>
+
+        <p>
+            tututuduudm tada
+        </p>
+
+        <p>
+            uthe sabke kadam tara ram pam pam haanji aese geet gaya karo
+        </p>
+    </div>
+
+<!--
+==========================================
+FIXED POSITION NOTES
+==========================================
+
+1. position: fixed removes the element
+   from the normal document flow.
+
+2. The element is positioned relative
+   to the browser window (viewport).
+
+3. It stays in the same place even
+   when the page is scrolled.
+
+4. top sets distance from the top
+   of the viewport.
+
+5. left sets distance from the left
+   of the viewport.
+
+6. right sets distance from the right
+   of the viewport.
+
+7. bottom sets distance from the bottom
+   of the viewport.
+
+8. No space is reserved for a fixed element.
+
+9. Common uses:
+   - Navigation bars
+   - Chat buttons
+   - Back-to-top buttons
+   - Notifications
+
+10. Memory Trick:
+    Relative = Moves itself
+    Absolute = Follows parent
+    Fixed = Follows screen
+
+==========================================
+-->
+
+</body>
+</html>
+```

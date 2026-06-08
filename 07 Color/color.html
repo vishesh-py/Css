@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Colors Demo</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Demo boxes */
+.box{
+    width: 300px;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid black;
+}
+
+/* Named Color */
+.named{
+    color: white;
+    background-color: royalblue;
+}
+
+/* Hex Color */
+.hex{
+    color: #FFFFFF;
+    background-color: #8B4513;
+}
+
+/* RGB Color */
+.rgb{
+    color: rgb(255,255,255);
+    background-color: rgb(34,139,34);
+}
+
+/* HSL Color */
+.hsl{
+    color: hsl(0,0%,100%);
+    background-color: hsl(240,100%,50%);
+}
+
+/* RGBA */
+.rgba{
+    background-color: rgba(255,0,0,0.5);
+}
+
+/* HSLA */
+.hsla{
+    background-color: hsla(120,100%,50%,0.5);
+}
+
+/* Transparent */
+.transparent-box{
+    background-color: transparent;
+    border: 3px solid red;
+}
+
+/* Hex Alpha */
+.hex-alpha{
+    background-color: #FF000080;
+}
+
+</style>
+</head>
+<body>
+
+<h1>CSS Colors Demonstration</h1>
+
+<h2>Foreground vs Background</h2>
+
+<div class="box named">
+    color = white <br>
+    background-color = royalblue
+</div>
+
+<h2>Named Colors</h2>
+
+<div class="box named">
+    royalblue
+</div>
+
+<h2>Hexadecimal Colors</h2>
+
+<div class="box hex">
+    #8B4513 (saddlebrown)
+</div>
+
+<h2>RGB Colors</h2>
+
+<div class="box rgb">
+    rgb(34,139,34)
+</div>
+
+<h2>HSL Colors</h2>
+
+<div class="box hsl">
+    hsl(240,100%,50%)
+</div>
+
+<h2>RGBA (Transparency)</h2>
+
+<div class="box rgba">
+    rgba(255,0,0,0.5)
+</div>
+
+<h2>HSLA (Transparency)</h2>
+
+<div class="box hsla">
+    hsla(120,100%,50%,0.5)
+</div>
+
+<h2>Transparent Keyword</h2>
+
+<div class="box transparent-box">
+    background-color: transparent
+</div>
+
+<h2>Hex Alpha</h2>
+
+<div class="box hex-alpha">
+    #FF000080
+</div>
+
+</body>
+</html>
+

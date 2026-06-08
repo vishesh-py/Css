@@ -1,0 +1,185 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Position Properties Demo</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            height:2000px; /* For scrolling */
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        /* STATIC */
+        .static-box{
+            width:150px;
+            height:80px;
+            background:lightgreen;
+            border:2px solid black;
+            margin:20px;
+        }
+
+        /* RELATIVE */
+        .relative-box{
+            width:150px;
+            height:80px;
+            background:lightblue;
+            border:2px solid black;
+
+            position:relative;
+            top:20px;
+            left:50px;
+
+            margin:20px;
+        }
+
+        /* Parent for Absolute */
+        .container{
+            width:400px;
+            height:200px;
+            background:#eee;
+            border:2px solid black;
+
+            position:relative;
+            margin:50px 20px;
+        }
+
+        /* ABSOLUTE */
+        .absolute-box{
+            width:120px;
+            height:80px;
+            background:lightcoral;
+            border:2px solid black;
+
+            position:absolute;
+            top:20px;
+            right:20px;
+        }
+
+        /* FIXED */
+        .fixed-box{
+            width:120px;
+            height:60px;
+            background:gold;
+            border:2px solid black;
+
+            position:fixed;
+            bottom:20px;
+            right:20px;
+
+            text-align:center;
+            line-height:60px;
+        }
+
+        /* STICKY */
+        .sticky-box{
+            background:orange;
+            border:2px solid black;
+
+            padding:15px;
+
+            position:sticky;
+            top:0;
+        }
+
+        .content{
+            padding:20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>CSS Position Demo</h1>
+
+    <!-- STATIC -->
+    <div class="static-box">
+        STATIC
+    </div>
+
+    <!-- RELATIVE -->
+    <div class="relative-box">
+        RELATIVE
+    </div>
+
+    <!-- ABSOLUTE -->
+    <div class="container">
+        Parent Container (Relative)
+
+        <div class="absolute-box">
+            ABSOLUTE
+        </div>
+    </div>
+
+    <!-- STICKY -->
+    <div class="sticky-box">
+        STICKY HEADER (Scroll Down)
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <h2>Scroll to Test Sticky & Fixed</h2>
+
+        <p>Lorem ipsum dolor sit amet...</p>
+        <p>Lorem ipsum dolor sit amet...</p>
+        <p>Lorem ipsum dolor sit amet...</p>
+        <p>Lorem ipsum dolor sit amet...</p>
+        <p>Lorem ipsum dolor sit amet...</p>
+
+        <div style="height:1200px;">
+            Keep Scrolling...
+        </div>
+    </div>
+
+    <!-- FIXED -->
+    <div class="fixed-box">
+        FIXED
+    </div>
+
+<!--
+==========================================
+POSITION REVISION NOTES
+==========================================
+
+1. position: static
+   - Default position.
+   - top, left, right, bottom do not work.
+
+2. position: relative
+   - Moves relative to its original position.
+   - Original space is preserved.
+
+3. position: absolute
+   - Removed from normal flow.
+   - Follows nearest positioned parent.
+
+4. position: fixed
+   - Removed from normal flow.
+   - Follows viewport (screen).
+   - Stays visible while scrolling.
+
+5. position: sticky
+   - Acts like relative initially.
+   - Becomes fixed when scrolling reaches it.
+
+==========================================
+MEMORY TRICK
+==========================================
+
+Static   = Stays
+Relative = Moves itself
+Absolute = Follows parent
+Fixed    = Follows screen
+Sticky   = Sticks on scroll
+
+==========================================
+-->
+
+</body>
+</html>
+```

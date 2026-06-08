@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.static-box {
+    width: 100px;
+    height: 100px;
+    background: lightgreen;
+    position: static; /* Default position */
+}
+
+.relative-box {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="static-box">Static</div>
+
+<div class="relative-box">Relative</div>
+
+<!--
+CSS position: relative
+
+position: relative is used to move an element relative to its normal (original) position in the document.
+
+top -- shifts the element down (positive value) or up (negative value).
+left -- shifts the element right (positive value) or left (negative value).
+right -- shifts the element left (positive value) or right (negative value).
+bottom -- shifts the element up (positive value) or down (negative value).
+
+In the example above, the .relative-box is moved 20px down and 30px to the right from its original position, while the .static-box remains in its normal flow position.
+-->
+</body>
+</html>

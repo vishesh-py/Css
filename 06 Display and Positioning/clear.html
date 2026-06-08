@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.box1{
+    float:left;
+    width:100px;
+    height:100px;
+    background:lightgreen;
+}
+
+.box2{
+    float:right;
+    width:100px;
+    height:100px;
+    background:lightcoral;
+}
+
+.clear-box{
+    clear:both;
+    background:lightblue;
+    padding:10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="box1">Left</div>
+
+<div class="box2">Right</div>
+
+<div class="clear-box">
+    I appear below both floated boxes.
+</div>
+
+<!--
+CLEAR NOTES
+
+The clear property is used to stop elements from wrapping around floated elements.
+
+1. Used with floated elements.
+2. Prevents elements from touching floats.
+3. clear:left clears left floats.
+4. clear:right clears right floats.
+5. clear:both clears both sides.
+6. clear:none is default.
+7. Often used after floated layouts.
+8. Commonly paired with float.
+
+Memory Trick:
+float = make element float
+clear = stop floating around it
+-->
+
+</body>
+</html>
